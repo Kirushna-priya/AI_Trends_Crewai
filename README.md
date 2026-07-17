@@ -7,22 +7,17 @@ Building a crew of AI agents (agentic workflows) using crewai and open-source/lo
 - Includes example agents, tasks, and tools that show how to coordinate research + writing.
 - Produces a sample output (blog_post.md) demonstrating end-to-end execution.
 
-## Stack
-- Language(s): Python  (100%)
-- Runtime / framework: plain Python scripts using crewai and an LLM provider abstraction
-- Notable libraries (from requirements.txt): crewai, load_dotenv, langchain_openai, crewai_tools
-
 ## Project structure
 AI_Trends_Crewai/
-  .gitignore            # repo ignore rules
-  LICENSE               # license file
-  requirements.txt      # python dependencies
+ .gitignore            
+  LICENSE               
+  requirements.txt     
   crew/
-    agents.py           # agent definitions and LLM configuration
-    crew.py             # builds the Crew and demonstrates kickoff usage
-    tasks.py            # Task definitions (research, write, etc.)
-    tools.py            # helper tools used by agents
-    blog_post.md        # example generated blog post (sample output)
+    agents.py          
+    crew.py             
+    tasks.py            
+    tools.py           
+    blog_post.md       
 
 How it fits together:
 - agents.py defines Agents (researcher, writer) and the LLM setup (provider, model, temperature, base_url).
@@ -75,12 +70,3 @@ The example will run the research and writing tasks and (in the sample configura
 - Add or modify tools: edit `AI_Trends_Crewai/crew/tools.py`.
 - Add tasks or change flow: edit `AI_Trends_Crewai/crew/tasks.py` and recompose the Crew in `crew/crew.py`.
 
-## Contributing
-- Open issues or PRs for bug fixes, feature requests, or improved examples.
-- If you add new agents/tools/tasks, include a short example in `crew/crew.py` and a test/demo script.
-
-## License
-See the LICENSE file in the repository.
-
-## Contact
-Repo owner: Kirushna-priya — refer to the GitHub profile for contact or issue submission.
